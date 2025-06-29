@@ -1,8 +1,12 @@
-28 June 2025 - Set 1 add this in GitHub by naking set1 and time and expiry
+<div align="center">
+  <h2>Prep Set 1</h2>
+  <h6>Date: 28 June 2025</h4>
+</div>
 
-Coding
+### <i>Coding</i>
 
 Q.1 Reverse string without using inbuilt fn
+```python
 def reverse_string(string="ganesh"):
     reversed_string = ''
     for i in range(len(string)-1, -1, -1):
@@ -10,9 +14,10 @@ def reverse_string(string="ganesh"):
         reversed_string += string[i]
     print(reversed_string)
 reverse_string("ganesh")
-
+```
 
 Q.2 Write fn to give words are anagram or not - listen,silent
+```python
 def check_anagram(word1, word2):
     if len(word1) != len(word2):
         return "Not same length"
@@ -31,9 +36,10 @@ def check_anagram(word1, word2):
             continue
     return True       
 print(check_anagram("listen","silent"))
-
+```
 
 Q.3 Write fn to check armastrong no. take input and return true/false
+```python
 # armstrong number is the number which is equal to sum of numbers in that number having in power the length of the that whole number i.e. 153 = 1^3 + 5^3 + 3^3
 def check_armstrong(num):
     power = len(str(num))
@@ -44,9 +50,10 @@ def check_armstrong(num):
         return True
     return False    
 print(check_armstrong(153))
-
+```
 
 Q.4 Check for palindrome without inbuilt fn like slicing etc and take full sentence with spaces and all
+```python
 # palindrome - same even if reads backwards
 def check_palindrome(string):
     reversed_string = ''
@@ -57,25 +64,25 @@ def check_palindrome(string):
     else :
         False
 print(check_palindrome("wow"))
+```
 
+- Q.5 Count each word occurrence in string
+- Q.6 print prime no. in between 25-50
+- Q.7 Swap two numbers without using third variable
+- Q.8 Merge two sorted arrays
+- Q.9 Convert number into binary
+- Q.10 Find no. Of occurrence in an array
 
-Q.5 Count each word occurrence in string
-Q.6 print prime no. in between 25-50
-Q.7 Swap two numbers without using third variable
-Q.8 Merge two sorted arrays
-Q.9 Convert number into binary
-Q.10 Find no. Of occurrence in an array
-
-Apti
+### <i>Apti</i>
 
 - Simple and compound Interset
 - solve 10 Qs on that after learning properly and making notes
 
-Communication
+### <i>Communication</i>
 
 - Write essay and gd/debate on it
 
 
-Mock Interview
+### <i>Mock Interview</i>
 
 - based on resume take combo tech/hr
