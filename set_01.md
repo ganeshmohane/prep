@@ -68,10 +68,59 @@ print(check_palindrome("wow"))
 
 - Q.5 Count each word occurrence in string
 - Q.6 print prime no. in between 25-50
-- Q.7 Swap two numbers without using third variable
-- Q.8 Merge two sorted arrays
-- Q.9 Convert number into binary
-- Q.10 Find no. Of occurrence in an array
+  
+Q.7 Swap two numbers without using third variable
+```python
+def swap_nums(num1, num2):
+    num1 = num1 + num2
+    num2 = num1 - num2
+    num1 = num1 - num2
+    return num1, num2
+
+print(swap_nums(10,15))
+```
+Q.8 Merge two sorted arrays
+```python
+def sort_arr(arr):
+    for i in range(0, len(arr)):
+        for j in range(i+1, len(arr)):
+            if arr[i] > arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]  
+    return arr
+                
+def merge_arr(arr1, arr2):
+    return sort_arr(arr1) + sort_arr(arr2)
+
+print(merge_arr([3,2,1,4], [8,6,7,5]))
+```
+
+Q.9 Convert number into binary
+  ```python
+def convert_to_bin(num):
+    no_bits = 4
+    bin = []
+    for i in range(0, no_bits):
+        remainder = num % 2
+        qoutient = num // 2
+        #print(num, 'r:', remainder, 'q:', qoutient)
+        num = qoutient
+        bin.append(remainder)
+    return bin[::-1]
+print(convert_to_bin(3))
+
+def convert_to_deci(num):
+    num = list(num)
+    no_bits = len(num)
+    powers = [8, 4, 2, 1]
+    deci_num = 0
+    for i in range(no_bits-1, -1, -1):
+        if int(num[i]) == 1:
+            print(num[i], powers[i])
+            deci_num += powers[i]
+    return deci_num
+print("Number is:",convert_to_deci('1111'))
+```
+Q.10 Find no. Of occurrence in an array
 
 ### <i>Apti</i>
 
